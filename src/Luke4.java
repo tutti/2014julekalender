@@ -3,7 +3,7 @@ import easyIO.Out;
 
 public class Luke4 {
 	private static In fil = new In("kilma_data_blindern.txt");
-	private static Out out = new Out();
+	private static Out ut = new Out();
 	
 	public static void main(String[] args) {
 		fil.inLine();
@@ -20,7 +20,7 @@ public class Luke4 {
 				dato = data[2];
 			}
 		}
-		out.outln("Laveste temperatur: " + minste);
-		out.outln("Dato: " + dato);
+		ut.outln("Laveste temperatur: " + minste);
+		ut.outln("Dato: " + dato);
 	}
 }
