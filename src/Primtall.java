@@ -7,6 +7,8 @@ public class Primtall {
 		return beregnPrimtall(maks, false);
 	}
 	
+	// Bruker Sieve of Eratosthenes for å beregne primtall opp til maks
+	// Pass inn "debug" for å printe hver gang løkken passerer 1 000 000*x.
 	public static ArrayList<Integer> beregnPrimtall(int maks, boolean debug) {
 		ArrayList<Integer> primtall = new ArrayList<Integer>();
 		boolean[] sieve = new boolean[maks+1];
